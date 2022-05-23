@@ -3,7 +3,7 @@
 #include "alg.h"
 
 
-double pown(double value, uint16_t n) {
+double pown(double value, uint16_t a) {
 double k = value;
   if (a == 0) {
     return 1;}
@@ -13,14 +13,14 @@ double k = value;
   return k;
 }
 
-uint64_t fact(uint16_t n) {
+uint64_t fact(uint16_t a) {
 if (a == 0) {
     return 1;
   }
   return a * fact(a - 1);
 }
 
-double calcItem(double x, uint16_t n) {
+double calcItem(double x, uint16_t a) {
 double k = pown(x, a) / fact(a);
   return k;
 }
